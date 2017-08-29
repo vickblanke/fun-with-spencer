@@ -1,5 +1,7 @@
 console.log("hello 124");
 
+const PI = 3.14159;
+
 // declare variables
 var name;
 var age;
@@ -20,7 +22,16 @@ function printAge(myAge) {
 	} else {
 		console.log("old but can drink");
 	}
-	// console.log(age);
+
+	display(myAge);
 }
 
-// function display
+function displayInput() {
+	var inputValue = document.getElementById('inputTag').value;
+	display(inputValue);
+}
+
+function display(output){
+	var outputDiv = document.getElementById("outputDiv");
+	outputDiv.innerHTML = output;
+}
